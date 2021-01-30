@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using Android.Content;
 
 namespace FirstApp
 {
@@ -15,6 +16,25 @@ namespace FirstApp
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            var textView = FindViewById<TextView>(Resource.Id.textView1);
+            var button = FindViewById<Button>(Resource.Id.button1);
+            var counter = 0;
+
+            button.Click += delegate
+            {
+                counter += 1;
+                textView.Text = counter.ToString();
+            };
+
+            var calculatorButton = FindViewById<Button>(Resource.Id.calculatorButton);
+
+            calculatorButton.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(CalculatorActivity));
+                StartActivity(intent);
+            };
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
