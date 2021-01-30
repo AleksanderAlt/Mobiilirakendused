@@ -19,10 +19,13 @@
         android:text="Count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button1" />
+        android:id="@+id/button1"
+        android:backgroundTint="#ff6200ee"  />
     <Button
         android:text="Calculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/calculatorButton" />
+        android:id="@+id/calculatorButton"
+        app:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="#ff3700b3" />
 </LinearLayout>
