@@ -41,4 +41,11 @@
         android:id="@+id/essentialsButton"
         android:backgroundTint="#ff3700b3"
         android:textColor="@android:color/white"/>
+    <Button
+        android:text="@string/listView_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewButton"
+        android:backgroundTint="#ff3700b3"
+        android:textColor="@android:color/white"/>
 </LinearLayout>

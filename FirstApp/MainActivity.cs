@@ -53,6 +53,14 @@ namespace FirstApp
                 StartActivity(intent);
             };
 
+            var listlistViewButton = FindViewById<Button>(Resource.Id.listViewButton);
+
+            listlistViewButton.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(SampleListActivity));
+                StartActivity(intent);
+            };
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

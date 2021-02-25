@@ -13,4 +13,7 @@
   <string name="flashlight_button">Flashlight</string>
   <string name="geocoding_button">Get coordinates</string>
   <string name="geocoding_text">Location coordinates</string>
+  <string name="listView_button">List View</string>
+  <string name="list_text">List</string>
+  <string name="addToList_button">Add</string>
 </resources>
