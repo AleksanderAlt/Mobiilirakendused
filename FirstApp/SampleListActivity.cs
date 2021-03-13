@@ -35,8 +35,8 @@ namespace FirstApp
                 new Car {Manufacturer = "Ford", Model = "Mondeo", KW = 105, Image = Resource.Drawable.ford },
                 new Car {Manufacturer = "Ford", Model = "Puma", KW = 92, Image = Resource.Drawable.ford },
                 new Car {Manufacturer = "Ford", Model = "Ranger", KW = 115, Image = Resource.Drawable.ford },
-                new Car {Manufacturer = "Nissan", Model = "X-trail", KW = 200  },
-                new Car {Manufacturer = "Lada", Model = "Vesta", KW = 10  },
+                new Car {Manufacturer = "Nissan", Model = "X-trail", KW = 200, Image = Resource.Drawable.nissan },
+                new Car {Manufacturer = "Lada", Model = "Vesta", KW = 10, Image = Resource.Drawable.lada  },
                 new Car {Manufacturer = "VolksWagen", Model = "Golf", KW = 77, Image = Resource.Drawable.volkswagen },
                 new Car {Manufacturer = "VolksWagen", Model = "Jetta", KW = 87, Image = Resource.Drawable.volkswagen },
                 new Car {Manufacturer = "VolksWagen", Model = "Tiguan", KW = 134, Image = Resource.Drawable.volkswagen },
@@ -48,6 +48,16 @@ namespace FirstApp
             {
                 var car = items[args.Position].Manufacturer;
                 Toast.MakeText(this, car, ToastLength.Long).Show(); // Show picture if click on Manufacturer
+
+                //var image = items[args.Position].Image;
+                //View view = LayoutInflater.Inflate(image, null);
+
+                //var toast = new Toast(this)
+                //{
+                //    Duration = ToastLength.Long,
+                //    View = view
+                //};
+                //toast.Show();
             };
         }
     }
