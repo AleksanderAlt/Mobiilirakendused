@@ -16,13 +16,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/number2" />
     <Button
-        android:text="Calculate"
+        android:text="@string/calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/calculate"
         android:backgroundTint="#ff6200ee" />
     <TextView
-        android:text="Answer"
+        android:text="@string/answer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/answer"

@@ -58,7 +58,7 @@ namespace FirstApp
                     // Currently discharging battery or not being charged
                     break;
                 case BatteryState.NotPresent:
-                // Battery doesn't exist in device (desktop computer)
+                    // Battery doesn't exist in device (desktop computer)
                 case BatteryState.Unknown:
                     // Unable to detect battery state
                     break;

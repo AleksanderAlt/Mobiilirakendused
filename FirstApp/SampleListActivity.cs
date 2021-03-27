@@ -49,15 +49,10 @@ namespace FirstApp
                 var car = items[args.Position].Manufacturer;
                 Toast.MakeText(this, car, ToastLength.Long).Show(); // Show picture if click on Manufacturer
 
-                //var image = items[args.Position].Image;
-                //View view = LayoutInflater.Inflate(image, null);
-
-                //var toast = new Toast(this)
-                //{
-                //    Duration = ToastLength.Long,
-                //    View = view
-                //};
-                //toast.Show();
+                var image = items[args.Position].Image;
+                Intent intent = new Intent(this, typeof(ImageActivity));
+                intent.PutExtra("imageId", image);
+                this.StartActivity(intent);
             };
         }
     }
