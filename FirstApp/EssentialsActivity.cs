@@ -85,15 +85,23 @@ namespace FirstApp
                     break;
             }
         }
+        
+        public bool flashlightBool;
         private async void flashlightButtonClick(object sender, EventArgs e)
         {
+            flashlightBool = !flashlightBool;
             try
             {
                 // Turn On
-                await Flashlight.TurnOnAsync();
-
+                if (flashlightBool)
+                {
+                    await Flashlight.TurnOnAsync();
+                }
                 // Turn Off
-                await Flashlight.TurnOffAsync();
+                else
+                {
+                    await Flashlight.TurnOffAsync();
+                }
             }
             catch (FeatureNotSupportedException fnsEx)
             {
